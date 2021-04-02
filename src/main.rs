@@ -6,6 +6,8 @@ mod bits_set;
 mod odd_or_even;
 mod power_of_two;
 mod min_flips;
+mod swap;
+mod odd_occurring_element;
 
 fn main() {
     println!(
