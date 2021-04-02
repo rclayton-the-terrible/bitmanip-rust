@@ -8,6 +8,7 @@ mod power_of_two;
 mod min_flips;
 mod swap;
 mod odd_occurring_element;
+mod opposite_signs;
 
 fn main() {
     println!(
