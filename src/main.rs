@@ -5,6 +5,7 @@ mod common;
 mod bits_set;
 mod odd_or_even;
 mod power_of_two;
+mod min_flips;
 
 fn main() {
     println!(
@@ -35,5 +36,20 @@ fn main() {
     println!(
         "What’s the output of this expression (( 5 & 1) == 1 )? Answer={}",
         (5 & 1) == 1
+    );
+
+    println!(
+        "Find the value of x | y. x={x}, y={y} Answer={result}",
+        x=2,
+        y=10,
+        result = 2 | 10
+    );
+
+    println!(
+        "Find the value of ( x | y) | z. x={x}, y={y}, z={z} Answer={result}",
+        x=12,
+        y=10,
+        z=32,
+        result = (12 | 10) | 32
     );
 }
