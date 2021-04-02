@@ -3,6 +3,8 @@ mod count_digits_in_integer;
 mod decimal_to_binary;
 mod common;
 mod bits_set;
+mod odd_or_even;
+mod power_of_two;
 
 fn main() {
     println!(
@@ -33,5 +35,5 @@ fn main() {
     println!(
         "What’s the output of this expression (( 5 & 1) == 1 )? Answer={}",
         (5 & 1) == 1
-    )
+    );
 }
