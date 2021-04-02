@@ -1,4 +1,4 @@
-fn division_method(int: i64) -> u64 {
+pub fn division_method(int: i64) -> u64 {
     let mut num_digits: u64 = 0;
     let mut dec_value: i64 = int;
     while dec_value >= 1 {
@@ -8,21 +8,21 @@ fn division_method(int: i64) -> u64 {
     num_digits
 }
 
-fn log10_method(int: i64) -> u64 {
+pub fn log10_method(int: i64) -> u64 {
     if int == 0 {
         return 1;
     }
     ((int as f64).log10().floor() + 1_f64) as u64
 }
 
-fn recursive_method(int: i64) -> u64 {
+pub fn recursive_method(int: i64) -> u64 {
     if int == 0 {
         return 0
     }
     recursive_method(((int / 10) as f64).floor() as i64) + 1
 }
 
-fn to_string_method(int: i64) -> u64 {
+pub fn to_string_method(int: i64) -> u64 {
     int.to_string().len() as u64
 }
 

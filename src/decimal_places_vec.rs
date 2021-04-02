@@ -1,6 +1,6 @@
 use super::common::{reverse};
 
-fn to_decimal_places_vec(num: u64) -> Vec<u8> {
+pub fn to_decimal_places_vec(num: u64) -> Vec<u8> {
     let mut places = vec![];
     let mut cur_value = num;
 

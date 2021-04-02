@@ -1,6 +1,6 @@
 use super::common::{reverse};
 
-fn division_method(int: i64) -> Vec<u8> {
+pub fn division_method(int: i64) -> Vec<u8> {
     let mut places:Vec<u8> = vec![];
     let mut quotient:i64 = int;
     while quotient != 0 && quotient != 1 {
@@ -12,7 +12,7 @@ fn division_method(int: i64) -> Vec<u8> {
     reverse(places)
 }
 
-fn bitshift_method(int: i64) -> Vec<u8> {
+pub fn bitshift_method(int: i64) -> Vec<u8> {
     let mut places:Vec<u8> = vec![];
     let mut rem:i64 = int;
     while rem != 0 {
