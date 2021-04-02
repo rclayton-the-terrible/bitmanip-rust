@@ -56,4 +56,30 @@ fn main() {
         z=32,
         result = (12 | 10) | 32
     );
+
+    println!(
+        "Find the output of the following left shift operators: X << 1, X << 2, where X = 5.  Answer={}, {}",
+        5 << 1,
+        5 << 2
+    );
+
+    println!(
+        "Output of the following left shift operators: x << 3, x << 5, where x = 5.  Answer={}, {}",
+        5 << 3,
+        5 << 5
+    );
+
+    println!(
+        "Find the output of the following right shift operators: X >> 1, X >> 2, where X = 5.  Answer={}, {}",
+        5 >> 1,
+        5 >> 2
+    );
+
+    println!(
+        "Find the output of the following right shift operators: X >> 3, X >> 5, where X = 5.  Answer={}, {}",
+        5 >> 3,
+        5 >> 5
+    );
+
+
 }
