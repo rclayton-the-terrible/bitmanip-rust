@@ -9,6 +9,7 @@ mod min_flips;
 mod swap;
 mod odd_occurring_element;
 mod opposite_signs;
+mod find_missing_number;
 
 fn main() {
     println!(
